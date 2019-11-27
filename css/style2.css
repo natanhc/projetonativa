@@ -1,0 +1,350 @@
+/*GERAL*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "Fira Sans", sans-serif;
+    color: #383838;
+    background-color: #ffffff;
+    float: left;
+    
+}
+a {
+    text-decoration: none;    
+    color: #5c605e;
+}
+a:hover{
+    font-weight: bold;
+}
+
+/* CABECALHO */
+.cabecalho{
+    width: 100%;
+    height: 6%;
+    display: inline-flex;
+    background: #d8d9dd;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+.febave{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.logo{
+    width: 3%;
+    height: 3%;
+    margin: 1%;
+}
+.icon{
+    width: 7%;
+    height: 7%;
+    margin: 3% 3% 0 0;
+}
+.mantidas{
+    width:  60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0% 0% 20%;
+}
+.mantidas > a, img{
+    width: 60%;
+    height: 60%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.mantidas > a,img:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(10%);
+}
+/* CONTAINER */
+.container{
+    position: relative;
+    height: auto;
+}
+.container_main{
+    display: flex;
+}
+.noticias{
+    position: absolute;
+    height:     85%;
+    display: inline-flex;
+    margin: 1% 0% 0% 0%;
+}
+.conselho{
+    display: inline-flex;
+    float: left;
+    width: 90%;
+    margin: 5% 5% 0% 5%;
+}
+.diretor{
+    width: 50%;
+}
+.curador{
+    width: 50%;
+}
+.left{
+    display: none;
+    width: 60%;
+    height: auto;
+    margin: 1% 1% 0 2%;
+    float: left;
+}
+.left .content{
+    display: inline-flex;
+    margin: 2% 1% 1% 0%;
+}
+.left > h2 {
+    color: #00852c;
+}
+.right > h4 {
+    color: #00852c;
+}
+.left .content > p{
+    margin: 0% 0% 1% 2%;
+}
+.left .content >  img{
+    width: 60%;
+    height: 60%;
+    float: left;
+    margin: 1% 0% 0% 0%;
+}
+.right{
+    width: 40%;
+    margin: 2% 2% 0 2%;
+}
+.corpo{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-content: space-around;
+}
+h1{
+    font-family: 'Segoe UI';
+    font-size: 500%;
+    top:2%;
+    text-align:center;
+    line-height: 200%;
+    color: #5c605e;
+}
+h2{
+    font-family: 'Segoe UI';
+    font-size: 200%;
+    top:2%;
+    text-align:inherit;
+    line-height: 200%;
+    color: #5c605e;
+}
+
+/*NOTICIAS*/
+.columns {
+    width: 95%;
+    display: flex;
+    margin: 2% 0 0 2%;
+}
+.column {
+  /*background: #eee;
+  border: 5px solid #ccc;*/
+    flex: 1.1;
+    padding: 20px;
+}
+.main-column {
+  flex: 1.5;
+}
+.columns > .column > h2{    
+    font-size: 250%;
+}
+.columns > .column > .topico > h4{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+.columns > .column * img{
+    float: right;
+    padding: 0% 0% 0% 2%;
+    width: 60%;
+}
+.columns > .column  .main{
+    margin: 3% 3% 0% 0%;
+    font-size: 95%;
+}
+
+/*MENU*/
+.menu{
+    font-size: 15px;
+    list-style:none; 
+    float:left; 
+    margin-left: 13%; 
+    margin-top: 2%; 
+    z-index: 2;
+}
+.menu li{
+    font-size: 100%;
+    position:relative; 
+    float:left; 
+    margin-right:50px; 
+}
+.menu li a{
+    color:#333; 
+    text-decoration:none; 
+    padding: 2px 2px; 
+    display:block;
+}
+.menu li a:hover{
+    color: #00852c;
+    text-shadow:0px 0px 5px #CCC; 
+}
+.menu li  ul{
+    position:absolute; 
+    top: 22px; 
+    left:0px;
+    background-color:#f0eeee; 
+    display:none;
+    width:100%;
+}
+.menu li:hover ul, 
+.menu li.over ul{
+        display:block;
+    }
+.menu li ul li{
+    display:block; 
+    width:70%;
+    margin-left: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/* RODAPE */
+.rodape{
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 15px;
+    background: #cdcaca;
+    color: #848282;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 4%;
+    z-index: 5;
+}
+.informacoes{
+    width:auto;
+    margin: 0.5% 1% 0 1%;
+    color: #848282;
+    position:relative;
+    font-size: 75%;
+}
+
+/* TABELA */
+@import "compass/css3";
+@import "compass/css3";
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+table {
+    font-family: 'Segoe UI';
+    border-collapse: separate;
+    background:#fff;
+    @include border-radius(5px);
+    margin:50px auto;
+    @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+thead {
+  @include border-radius(5px);
+}
+thead tr {
+  background: #858d99;
+}
+thead th {
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  @include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
+  text-align:left;
+  padding:20px;
+  @include background-image(linear-gradient(#646f7f, #4a5564));
+  border-top:1px solid #858d99;
+  
+  &:first-child {
+   @include border-top-left-radius(5px); 
+  }
+
+  &:last-child {
+    @include border-top-right-radius(5px); 
+  }
+}
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+  
+}
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+tbody tr:last-child td {
+  border-bottom:none;
+  &:first-child {
+    @include border-bottom-left-radius(5px);
+  }
+  &:last-child {
+    @include border-bottom-right-radius(5px);
+  }
+}
+tbody:hover > tr td {
+  @include opacity(0.5);
+  
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+tbody:hover > tr:hover td {
+  @include text-shadow(none);
+  color:#2d2d2d;
+  @include opacity(1.0);
+}
+
+
+/*CONTATO*/
+input[type=text],input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container2 {
+    width: 47%;
+    height: auto;
+    /*background-color: #f2f2f2;*/
+    padding: 2% 0% 0% 5%;
+}
+.container2 .lista{
+    display: inline-flex;
+    align-content: space-between;
+}
